@@ -1,0 +1,33 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar  >
+    <ion-button slot="end"  routerLink="/home" (click)="saveBook($event)" >SAVE BOOK</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+
+<fieldset [formGroup] ='newBookItem'>
+  <ion-item >
+    <ion-label >ISBN</ion-label>
+    <ion-input formControlName="ISBN" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Book</ion-label>
+    <ion-input formControlName="Book" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Publisher</ion-label>
+    <ion-input formControlName="Publisher"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Author</ion-label>
+    <ion-input formControlName="Author"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Year</ion-label>
+    <ion-input formControlName="Year"></ion-input>
+  </ion-item>
+
+</fieldset>

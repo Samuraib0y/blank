@@ -1,0 +1,11 @@
+<ion-item *ngFor="let bookIt of bookList" class="bookItems">
+  <span>{{bookIt.ISBN}}</span>
+  <span>{{bookIt.Book}}</span>
+  <span>{{bookIt.Publisher}}</span>
+  <span>{{bookIt.Author}}</span>
+  <span>{{bookIt.Year}}</span>
+
+  <ion-button slot="end" (click)="getId(bookIt.id)">
+    Delete
+  </ion-button>
+</ion-item>

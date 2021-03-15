@@ -22,7 +22,7 @@ export class NewBookComponent implements OnInit {
  newId = Guid.newGuid()
 
 
-  private saveBook(){
+  public saveBook(){
     this.bookService.pushNewBook(this.newBookItem, this.newId)
   }
 
